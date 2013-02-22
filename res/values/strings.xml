@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OperationKneeBreaker</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="u_on_roof">Are you on a high place / roof right now?</string>
+    <string name="u_get_roof">Then get your ass to a roof!</string>
+    <string name="tk_pic_roof">Transitioning to the camera, please prepare to take a picture of the floor your want to jump on.</string>
+    <string name="yes">Yeah</string>
+    <string name="No">Naw, dog</string>
+    <string name="title_activity_roof_analyzer">RoofAnalyzerActivity</string>
+    <string name="clear_button">Clear</string>
+    <string name="okay_button">Calculate</string>
+    <string name="image_content_description">Picture of the roof you just photographed, duh.</string>
+
+</resources>

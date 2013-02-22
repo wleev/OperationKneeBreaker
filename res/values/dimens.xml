@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mrgn_top_text">100dp</dimen>
+    <dimen name="mrgn_left_button">64dip</dimen>
+    <dimen name="mrgn_right_button">64dip</dimen>
+    <dimen name="mrgn_spacing_test">10dip</dimen>
+</resources>

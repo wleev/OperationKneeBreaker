@@ -1,0 +1,7 @@
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <color name="light_gray_color">#F5F5F5</color>
+    <color name="chestnut_rose">#CD5C5C</color>
+    <color name="laser_lemon">#FFFE59</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

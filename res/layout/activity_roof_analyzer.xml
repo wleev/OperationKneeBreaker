@@ -21,7 +21,6 @@
             android:id="@+id/clr_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/transparent"
             android:text="@string/clear_button" />
 
         <Space
@@ -45,12 +44,18 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/roofView"
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:visibility="invisible" />
+
+    <com.ubicast.operationkneebreaker.drawing.DrawableImageView
+        android:id="@+id/drawableView"
         android:layout_width="match_parent"
-        android:layout_height="494dp"
-        android:layout_gravity="bottom"
-        android:contentDescription="@string/image_content_description"
-        android:scaleType="matrix" />
+        android:layout_height="498dp"
+        android:layout_gravity="bottom" />
 
 </FrameLayout>

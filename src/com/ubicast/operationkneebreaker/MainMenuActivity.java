@@ -17,6 +17,7 @@ import android.provider.MediaStore;
 import android.provider.MediaStore.Images.Media;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,7 +41,7 @@ public class MainMenuActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         mMainMenuState = MainMenuActivityState.RoofQuestion;
 
         setContentView(R.layout.activity_main_menu);        
@@ -124,6 +125,7 @@ public class MainMenuActivity extends Activity {
 		}
 		File image = new File(roofDir,"yo_last_roof.jpg");
 		camera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(image));
+		
 		startActivityForResult(camera, TAKE_A_PHOTO_CODE);
 	}
 	
@@ -134,6 +136,7 @@ public class MainMenuActivity extends Activity {
 				Uri photoUri = Uri.fromFile(new File(Environment.getExternalStorageDirectory()+"/yo_roofs/"+"yo_last_roof.jpg"));
 				Toast.makeText(this, "YO ROOF ON FIRE BRAH, IT SAVED AT" +
 	                     photoUri, Toast.LENGTH_LONG).show();
+			
 				Intent intent = new Intent(getApplicationContext(), RoofAnalyzerActivity.class);
 				intent.putExtra("photoUri", photoUri);
 				
